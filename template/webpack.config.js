@@ -2,7 +2,6 @@
 
 var path = require('path');
 var webpack = require('webpack');
-var ngAnnotatePlugin = require('ng-annotate-webpack-plugin');
 
 var appRoot = path.join(__dirname, '/src');
 var bowerRoot = path.join(__dirname, '/bower_components');
@@ -75,10 +74,7 @@ module.exports = {
     new webpack.ContextReplacementPlugin(/.*$/, /a^/),
     new webpack.ProvidePlugin({
       'angular': 'exports?window.angular!bower/angular'
-    }),
-    new ngAnnotatePlugin({
-      add: true
-    });
+    })
   ],
   devtool: 'eval'
 };
