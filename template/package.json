@@ -1,8 +1,8 @@
 {
-  "name": "angular-webpack",
+  "name": "{{name}}",
   "version": "0.0.0",
-  "description": "AngularJS component using webpack",
-  "main": "target/index.html",
+  "description": "{{description}}",
+  "main": "dist/index.html",
   "scripts": {
     "start": "node server",
     "test": "echo \"Error: no test specified\" && exit 1"
