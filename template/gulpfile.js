@@ -60,7 +60,7 @@ gulp.task('clearTarget', function() {
   return rimraf.sync(paths.distDir, gutil.log);
 });
 
-gulp.task('build', ['clearTarget', 'webpack', 'other'])#;
+gulp.task('build', ['clearTarget', 'webpack', 'other']);
 
 gulp.task('watch', ['clearTarget', 'other'], function() {
   {{#fbFlo}}
